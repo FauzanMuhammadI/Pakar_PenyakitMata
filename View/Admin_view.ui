@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1720</width>
+    <height>1941</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background : #222831;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : #fff
+</string>
+    </property>
+    <property name="text">
+     <string>Tabel Penyakit</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Kode_edt">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>470</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background : #393E46;
+border : 2px solid rgb(37,39,48);
+padding-left : 20px;
+padding-right : 20px;
+border-radius : 20px;
+color : #fff
+}
+QLineEdit:focus{
+	border : 2px solid #00ADB5;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Kode Penyakit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Tambah_btn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>640</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Tambah Penyakit</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gejala_edt">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>470</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background : #393E46;
+border : 2px solid rgb(37,39,48);
+padding-left : 20px;
+padding-right : 20px;
+border-radius : 20px;
+color : #fff
+}
+QLineEdit:focus{
+	border : 2px solid #00ADB5;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Kode Gejala</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Tambah_btn_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>640</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Tambah Gejala</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>100</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : #fff
+</string>
+    </property>
+    <property name="text">
+     <string>Tabel Gejala</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edt_3">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>470</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background : #393E46;
+border : 2px solid rgb(37,39,48);
+padding-left : 20px;
+padding-right : 20px;
+border-radius : 20px;
+color : #fff
+}
+QLineEdit:focus{
+	border : 2px solid #00ADB5;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Kode Pertanyaan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Tambah_btn_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>640</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Tambah Pertanyaan</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>100</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : #fff
+</string>
+    </property>
+    <property name="text">
+     <string>Tabel Pertanyaan</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Penyakit_edt">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>550</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background : #393E46;
+border : 2px solid rgb(37,39,48);
+padding-left : 20px;
+padding-right : 20px;
+border-radius : 20px;
+color : #fff
+}
+QLineEdit:focus{
+	border : 2px solid #00ADB5;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Nama Penyakit</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>141</y>
+      <width>341</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget{
+background : #393E46;
+border : 2px solid rgb(37,39,48);
+color : #fff
+}
+QHeaderView::section {
+    background:#393E46;
+
+}</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>140</y>
+      <width>341</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background : #393E46;
+border : 2px solid rgb(37,39,48);
+color : #fff
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Editpenyakit_btn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>640</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Edit Penyakit</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deletepenyakit_btn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>710</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Delete Penyakit</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>20</y>
+      <width>1481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : #fff
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="namagejala_edt">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>550</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background : #393E46;
+border : 2px solid rgb(37,39,48);
+padding-left : 20px;
+padding-right : 20px;
+border-radius : 20px;
+color : #fff
+}
+QLineEdit:focus{
+	border : 2px solid #00ADB5;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Nama Gejala</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="edt_btn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>640</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Edit Gejala</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deletegejala_btn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>710</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Delete Gejala</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="edt_btn_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>640</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Edit Pertanyaan</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_btn_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>710</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Delete Pertanyaan</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edt_2">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>540</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background : #393E46;
+border : 2px solid rgb(37,39,48);
+padding-left : 20px;
+padding-right : 20px;
+border-radius : 20px;
+color : #fff
+}
+QLineEdit:focus{
+	border : 2px solid #00ADB5;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Pertanyaan</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>140</y>
+      <width>351</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background : #393E46;
+border : 2px solid rgb(37,39,48);
+color : #fff
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edt_4">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>470</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background : #393E46;
+border : 2px solid rgb(37,39,48);
+padding-left : 20px;
+padding-right : 20px;
+border-radius : 20px;
+color : #fff
+}
+QLineEdit:focus{
+	border : 2px solid #00ADB5;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Kode Rule</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edt_5">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>540</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background : #393E46;
+border : 2px solid rgb(37,39,48);
+padding-left : 20px;
+padding-right : 20px;
+border-radius : 20px;
+color : #fff
+}
+QLineEdit:focus{
+	border : 2px solid #00ADB5;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Kode Pertanyaan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="edt_btn_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>720</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Edit Rule</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Tambah_btn_4">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>720</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Tambah Rule</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>140</y>
+      <width>351</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background : #393E46;
+border : 2px solid rgb(37,39,48);
+color : #fff
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>100</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : #fff
+</string>
+    </property>
+    <property name="text">
+     <string>Tabel Rule</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_btn_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>790</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Delete Rule</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edt_6">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>610</y>
+      <width>341</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+background : #393E46;
+border : 2px solid rgb(37,39,48);
+padding-left : 20px;
+padding-right : 20px;
+border-radius : 20px;
+color : #fff
+}
+QLineEdit:focus{
+	border : 2px solid #00ADB5;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Kode Penyakit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Lanjut_btn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1500</x>
+      <y>10</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Lanjut</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Kembal_btn">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1500</x>
+      <y>90</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:#EEEEEE;
+border-radius : 5px
+}
+QPushButton:pressed{
+background:#393E46;
+border-radius : 5px;
+  transform: translateY(4px);
+color : #EEEEEE;
+}
+  
+
+</string>
+    </property>
+    <property name="text">
+     <string>Kembali</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1720</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
