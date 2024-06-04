@@ -138,9 +138,6 @@ class Forward(QtWidgets.QMainWindow):
         pygame.mixer.music.load(audio_bytes)
         pygame.mixer.music.play()
 
-        # Tunggu hingga audio selesai diputar
-        # while pygame.mixer.music.get_busy():
-        #     continue
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
