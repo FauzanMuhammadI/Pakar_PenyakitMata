@@ -1,12 +1,7 @@
-import sys
 from PyQt5 import QtWidgets
 from PyQt5.uic import loadUi
-
 from Controller.UserController import UserController
 from Model.User import UserModel
-from View.Admin import Admin
-from View.Forward import Forward
-
 
 class Register(QtWidgets.QMainWindow):
     def __init__(self):

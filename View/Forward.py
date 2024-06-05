@@ -3,16 +3,12 @@ from PyQt5 import QtWidgets
 from PyQt5.uic import loadUi
 from pyqt5_plugins.examplebuttonplugin import QtGui
 from gtts import gTTS
-import os
 import pygame
 from io import BytesIO
 from Controller.JawabanController import JawabanController
 from Controller.PenyakitController import PenyakitController
 from Controller.PertanyaanController import PertanyaanController
 from Controller.RuleController import RuleController
-from Controller.UserController import UserController
-from Model.User import UserModel
-from View.Admin import Admin
 
 class Forward(QtWidgets.QMainWindow):
     def __init__(self):
@@ -49,7 +45,6 @@ class Forward(QtWidgets.QMainWindow):
         if self.i < len(data) :
             self.i1 = i
             self.listWidget.addItem(data[i]["Nama"])
-            # self.Kode_edt_3.setText("Maaf, tidak ada penyakit yang terdeteksi")
     def ya(self):
         data = self.pertanyaan.GetallPertanyaan()
         self.workinglist.append(data[self.i1]["Kode"])
@@ -59,8 +54,6 @@ class Forward(QtWidgets.QMainWindow):
         if self.i == len(data) :
             self.prosses(self.workinglist)
 
-
-        # else:
         print(self.i)
 
     def tidak(self):
@@ -70,9 +63,6 @@ class Forward(QtWidgets.QMainWindow):
             self.prosses(self.workinglist)
         self.i += 1
         self.Showpertanyaan(self.i)
-
-        # else:
-            # self.prosses(set(self.workinglist))
 
         print(self.workinglist)
 
@@ -120,10 +110,7 @@ class Forward(QtWidgets.QMainWindow):
             kata = teks
             self.label_7.setText(teks)
             pixmap = self.get_pixmap_from_blob(gambar)
-            # label = QtWidgets.QLabel()
             self.label_8.setPixmap(pixmap)
-            # self.setCentralWidget(self.label_8)
-            # self.resize(pixmap.width(), pixmap.height())
         self.TTS(kata)
 
     def TTS(self,teks):
