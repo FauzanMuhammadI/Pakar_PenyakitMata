@@ -130,7 +130,7 @@ color : #EEEEEE;
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="Tambah_btn_2">
+   <widget class="QPushButton" name="Rule_btn">
     <property name="enabled">
      <bool>true</bool>
     </property>
@@ -164,7 +164,7 @@ color : #EEEEEE;
 </string>
     </property>
     <property name="text">
-     <string>Kembali</string>
+     <string>Tabel Rule</string>
     </property>
     <property name="checkable">
      <bool>false</bool>
